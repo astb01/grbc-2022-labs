@@ -1,0 +1,21 @@
+{
+  "name": "session-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "get ready bootcamp",
+    "js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.10",
+    "@types/jest": "^29.0.0",
+    "jest": "^28.1.3"
+  }
+}
