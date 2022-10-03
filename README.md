@@ -8,6 +8,12 @@ Each session will have a kata folder and inside an implemention file and a suppo
 
 ## Running Tests
 
+First install all dependencies by running within each session folder:
+
+```
+npm install
+```
+
 You can run tests in two forms. Within each session folder:
 
 ```
