@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Peralta', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: gold;
+  height: 100vh;
+}
+
+#countdown {
+  font-size: 5rem;
+}
+
+#resetScore {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#score {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+}
+
+#score > div {
+  font-weight: 600;
+}
+
+#gameChoices,
+#result,
+#message,
+#countdown,
+.finalChoiceDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.finalChoiceDiv > img {
+  border: 2px solid black;
+}
+
+#gameChoices > div > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.userChoice {
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  padding: 0px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.gameTitle,
+#result {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.userChoices,
+.gameTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.userChoices > button {
+  border-radius: 50%;
+  margin: 10px;
+  background: black;
+  border: none;
+}
+
+.bounce {
+  animation: bounce 2s ease normal;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

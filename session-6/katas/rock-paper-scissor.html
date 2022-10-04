@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="rock-paper-scissors.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gameContainer">
+        <div id="score">
+          <div>Player: <span id="playerScore">0</span></div>
+          <div>Computer: <span id="computerScore">0</span></div>
+          <button id="resetScore" title="Click to reset score">
+            Reset Score
+          </button>
+        </div>
+        <div class="gameTitle">Rock, Paper, Scissors</div>
+        <div id="countdown"></div>
+        <div class="userChoices" id="userChoicesDiv">
+          <button id="rock" class="userChoiceBtn">
+            <img
+              class="userChoice"
+              src="rock2.png"
+              alt="rock"
+              title="Click to choose rock"
+            />
+          </button>
+          <button id="paper" class="userChoiceBtn">
+            <img
+              class="userChoice"
+              src="paper2.png"
+              alt="paper"
+              title="Click to choose paper"
+            />
+          </button>
+          <button id="scissors" class="userChoiceBtn">
+            <img
+              class="userChoice"
+              src="scissors2.png"
+              alt="scissors"
+              title="Click to choose scissors"
+            />
+          </button>
+        </div>
+        <div id="gameChoices"></div>
+        <div id="result"></div>
+        <div id="message"></div>
+      </div>
+    </div>
+
+    <!-- 
+
+     -->
+  </body>
+</html>

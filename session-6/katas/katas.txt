@@ -1,0 +1,18 @@
+FizzBuzz
+
+- If the number is a multiple of 3 return Fizz
+- If the number is a multiple of 5 return Buzz
+- If the number is a multiple of 3 AND 5 return FizzBuzz
+- Any other number is simply returned as is
+
+Example:
+
+1 2 Fizz 4 Buzz Fizz 7 8 ...
+
+============== 
+
+Write a program to convert a number to 
+Roman Numerals
+
+so  given 1 should return I
+    given 2 should return II ....
