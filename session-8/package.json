@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "start": "REACT_APP_API_KEY=${GITHUB_API_KEY} ....",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },

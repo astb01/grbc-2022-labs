@@ -1,0 +1,19 @@
+Given a score for a football match represented as a pair of numbers separated by a colon,
+work out the points for the home team where:
+
+X:Y
+
+X = home
+Y = away
+
+1:1 equals 1 point
+2:1 equals 3 points because 2 is greater than 1 
+1:2 equals 0 points because the away team scored more
+
+Bonus,
+
+Given a list of fixtures, work out the total points tally for a home team and also the away team.
+
+Your logic should allow for deciding if you want the tally for the home team or the away team.
+
+Team names are not important - because there isnt one :)

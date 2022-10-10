@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: white;
+  background: rgb(52, 84, 154);
+}
+
+.container,
+.weatherContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.inputField > button {
+  background: rgb(3, 3, 198);
+  border-radius: 10px;
+  color: white;
+  height: 60px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.inputField > input[type='text'] {
+  height: 60px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid silver;
+  outline: none;
+}
+
+.weatherDataContainer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+#results {
+  width: 100%;
+}
+
+.weatherStatisticsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+
+.weatherConditionContainer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.weatherConditionContainer img {
+  height: 350px;
+}
+
+.locationDetailsContainer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+#temperaturesId {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+}
+
+#locationName {
+  font-size: 4rem;
+}
+
+.direction {
+  font-size: 1.5rem;
+  transform: rotateX(90);
+}
+
+.temperature {
+  font-size: 2rem;
+}
+
+.weatherIcon {
+  height: 300px;
+  width: 300px;
+}

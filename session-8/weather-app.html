@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="weather-api.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Weather API</h2>
+
+      <div class="weatherContainer">
+        <form novalidate>
+          <div class="inputField">
+            <input
+              type="text"
+              name="location"
+              id="locationId"
+              placeholder="Enter location ..."
+              required="true"
+            />
+            <button type="submit" id="submitBtn">Submit</button>
+
+            <span id="statusMessage"></span>
+          </div>
+        </form>
+
+        <!-- 
+          locationName,
+          longitude,
+          latitude,
+          temperatureData: {
+            feelsLike: {
+              celcius: convertToCelciusFromKelvin(feels_like),
+              fahrenheit: convertToFahrenheitFromKelvin(feels_like),
+            },
+            kelvin: temp,
+            celcius: convertToCelciusFromKelvin(temp),
+            fahrenheit: convertToFahrenheitFromKelvin(temp),
+          },
+          weatherCondition,
+         -->
+        <div id="results">
+          <div class="weatherDataContainer">
+            <div class="weatherStatisticsContainer">
+              <!-- start of red -->
+              <div class="direction" id="latitudeId"></div>
+              <div class="locationDetailsContainer" id="locationDetailsId">
+                <!-- start of blue -->
+                <div id="locationName"></div>
+                <div id="temperaturesId">
+                  <div class="temperature" id="celcius"></div>
+                  <div class="temperature" id="fahrenheit"></div>
+                </div>
+              </div>
+              <!-- end of blue -->
+              <div class="direction" id="longitudeId"></div>
+            </div>
+            <!-- end of red -->
+            <div id="weatherCondition" class="weatherConditionContainer">
+              <!-- start of green -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
