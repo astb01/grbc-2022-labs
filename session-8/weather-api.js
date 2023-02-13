@@ -1,5 +1,4 @@
 const API_KEY = process.env.REACT_APP_API_KEY || 'weather app';
-//`cba96481bd2ca944f4eddb25c2b67c01`;
 
 const convertToCelciusFromKelvin = (kelvin) => Math.floor(kelvin - 273.15);
 const convertToFahrenheitFromKelvin = (kelvin) =>
